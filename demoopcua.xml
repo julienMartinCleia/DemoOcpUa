@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://yourorganisation.org/DemoOpcUa/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://yourorganisation.org/DemoOpcUa/</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://yourorganisation.org/DemoOpcUa/" PublicationDate="2024-03-14T13:32:35Z" Version="1.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Int16">i=4</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="ByteString">i=15</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasEncoding">i=38</Alias>
+        <Alias Alias="HasDescription">i=39</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="IdType">i=256</Alias>
+        <Alias Alias="NumericRange">i=291</Alias>
+        <Alias Alias="SlotType">ns=1;i=3003</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ua:ModelInfo Tool="UaModeler" Hash="kPi8EYjl2fNfSJ1lL/xkPw==" Version="1.6.11"/>
+        </Extension>
+    </Extensions>
+    <UADataType NodeId="ns=1;i=3003" BrowseName="1:SlotType">
+        <DisplayName>SlotType</DisplayName>
+        <Description>Slot Type</Description>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+        </References>
+        <Definition Name="1:SlotType">
+            <Field DataType="Int16" Name="ProductId">
+                <Description>Product Id</Description>
+            </Field>
+            <Field DataType="String" MaxStringLength="2" Name="ProductName">
+                <Description>Product Name</Description>
+            </Field>
+            <Field DataType="Int16" ValueRank="1" ArrayDimensions="3" Name="Location">
+                <Description>Location</Description>
+            </Field>
+            <Field DataType="Int16" ValueRank="1" ArrayDimensions="3" Name="Rotation">
+                <Description>Rotation</Description>
+            </Field>
+            <Field DataType="Int16" ValueRank="1" ArrayDimensions="3" Name="Dimension">
+                <Description>Dimension</Description>
+            </Field>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6005" BrowseName="1:SlotType">
+        <DisplayName>SlotType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+        <Value>
+            <uax:String>SlotType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6003" NodeId="ns=1;i=6006" BrowseName="1:SlotType">
+        <DisplayName>SlotType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6003</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='SlotType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="DemoOpcUa_BinarySchema" DataType="ByteString" NodeId="ns=1;i=6001" BrowseName="1:DemoOpcUa">
+        <DisplayName>DemoOpcUa</DisplayName>
+        <Description>Collects the data type descriptions of http://yourorganisation.org/DemoOpcUa/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6005</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly95b3Vyb3JnYW5pc2F0aW9uLm9yZy9EZ
+        W1vT3BjVWEvIiBEZWZhdWx0Qnl0ZU9yZGVyPSJMaXR0bGVFbmRpYW4iIHhtbG5zOm9wYz0ia
+        HR0cDovL29wY2ZvdW5kYXRpb24ub3JnL0JpbmFyeVNjaGVtYS8iIHhtbG5zOnVhPSJodHRwO
+        i8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly95b3Vyb
+        3JnYW5pc2F0aW9uLm9yZy9EZW1vT3BjVWEvIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0ia
+        HR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCY
+        XNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJTbG90VHlwZSI+CiAgPG9wYzpEb
+        2N1bWVudGF0aW9uPlNsb3QgVHlwZTwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZ
+        CBUeXBlTmFtZT0ib3BjOkludDE2IiBOYW1lPSJQcm9kdWN0SWQiLz4KICA8b3BjOkZpZWxkI
+        FR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJQcm9kdWN0TmFtZSIvPgogIDxvcGM6R
+        mllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZkxvY2F0aW9uIi8+CiAgPG9wY
+        zpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZkxvY2F0aW9uIiBUeXBlTmFtZT0ib3BjOkludDE2I
+        iBOYW1lPSJMb2NhdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgT
+        mFtZT0iTm9PZlJvdGF0aW9uIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZlJvd
+        GF0aW9uIiBUeXBlTmFtZT0ib3BjOkludDE2IiBOYW1lPSJSb3RhdGlvbiIvPgogIDxvcGM6R
+        mllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZkRpbWVuc2lvbiIvPgogIDxvc
+        GM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZEaW1lbnNpb24iIFR5cGVOYW1lPSJvcGM6SW50M
+        TYiIE5hbWU9IkRpbWVuc2lvbiIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+Cjwvb3BjOlR5c
+        GVEaWN0aW9uYXJ5Pgo=</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6002" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+        <Value>
+            <uax:String>http://yourorganisation.org/DemoOpcUa/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="DemoOpcUa_XmlSchema" DataType="ByteString" NodeId="ns=1;i=6003" BrowseName="1:DemoOpcUa">
+        <DisplayName>DemoOpcUa</DisplayName>
+        <Description>Collects the data type descriptions of http://yourorganisation.org/DemoOpcUa/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwOi8veW91cm9yZ2FuaXNhdGlvbi5vcmcvRGVtb09wY1VhL1R5cGVzLnhzZCIgeG1sbnM6d
+        G5zPSJodHRwOi8veW91cm9yZ2FuaXNhdGlvbi5vcmcvRGVtb09wY1VhL1R5cGVzLnhzZCIge
+        G1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZ
+        CIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj4KIDx4czppb
+        XBvcnQgbmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9Ue
+        XBlcy54c2QiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJTbG90VHlwZSI+CiAgPHhzOmFub
+        m90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPlNsb3QgVHlwZTwveHM6ZG9jdW1lbnRhd
+        Glvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVud
+        CBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c2hvcnQiIG5hbWU9IlByb
+        2R1Y3RJZCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgd
+        HlwZT0ieHM6c3RyaW5nIiBuYW1lPSJQcm9kdWN0TmFtZSIvPgogICA8eHM6ZWxlbWVudCBta
+        W5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6TGlzdE9mSW50MTYiIG5hbWU9I
+        kxvY2F0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxI
+        iB0eXBlPSJ1YTpMaXN0T2ZJbnQxNiIgbmFtZT0iUm90YXRpb24iLz4KICAgPHhzOmVsZW1lb
+        nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkxpc3RPZkludDE2IiBuY
+        W1lPSJEaW1lbnNpb24iLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KI
+        Dx4czplbGVtZW50IHR5cGU9InRuczpTbG90VHlwZSIgbmFtZT0iU2xvdFR5cGUiLz4KIDx4c
+        zpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZTbG90VHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogI
+        CA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlP
+        SJ0bnM6U2xvdFR5cGUiIG5hbWU9IlNsb3RUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwve
+        HM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zO
+        kxpc3RPZlNsb3RUeXBlIiBuYW1lPSJMaXN0T2ZTbG90VHlwZSIgbmlsbGFibGU9InRydWUiL
+        z4KPC94czpzY2hlbWE+Cg==</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6003" NodeId="ns=1;i=6004" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6003</Reference>
+        </References>
+        <Value>
+            <uax:String>http://yourorganisation.org/DemoOpcUa/Types.xsd</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariableType DataType="SlotType" NodeId="ns=1;i=2001" BrowseName="1:SlotVariableType">
+        <DisplayName>SlotVariableType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6020</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6019</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Int16" ParentNodeId="ns=1;i=2001" ValueRank="1" NodeId="ns=1;i=6020" ArrayDimensions="0" BrowseName="1:Dimension" AccessLevel="3">
+        <DisplayName>Dimension</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Int16" ParentNodeId="ns=1;i=2001" ValueRank="1" NodeId="ns=1;i=6018" ArrayDimensions="0" BrowseName="1:Location" AccessLevel="3">
+        <DisplayName>Location</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Int16" ParentNodeId="ns=1;i=2001" NodeId="ns=1;i=6007" BrowseName="1:ProductId" AccessLevel="3">
+        <DisplayName>ProductId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=2001" NodeId="ns=1;i=6021" BrowseName="1:ProductName" AccessLevel="3">
+        <DisplayName>ProductName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Int16" ParentNodeId="ns=1;i=2001" ValueRank="1" NodeId="ns=1;i=6019" ArrayDimensions="0" BrowseName="1:Rotation" AccessLevel="3">
+        <DisplayName>Rotation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2001</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=5006" BrowseName="1:Pus">
+        <DisplayName>Pus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=5009</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=5009" BrowseName="1:PuIn">
+        <DisplayName>PuIn</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6015</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="SlotType" ValueRank="1" NodeId="ns=1;i=6015" ArrayDimensions="11" BrowseName="1:SlotList" AccessLevel="3">
+        <DisplayName>SlotList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5009</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5002</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <SlotType xmlns="http://yourorganisation.org/DemoOpcUa/Types.xsd">
+                            <ProductId>0</ProductId>
+                            <ProductName>A</ProductName>
+                            <Location>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Location>
+                            <Rotation>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Rotation>
+                            <Dimension>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                                <Int16 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int16>
+                            </Dimension>
+                        </SlotType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAObject SymbolicName="http___yourorganisation_org_DemoOpcUa_" NodeId="ns=1;i=5010" BrowseName="1:http://yourorganisation.org/DemoOpcUa/">
+        <DisplayName>http://yourorganisation.org/DemoOpcUa/</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6008" BrowseName="IsNamespaceSubset">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6009" BrowseName="NamespacePublicationDate">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-03-14T13:32:35Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6010" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+        <Value>
+            <uax:String>http://yourorganisation.org/DemoOpcUa/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6011" BrowseName="NamespaceVersion">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+        <Value>
+            <uax:String>1.0.0</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5010" ValueRank="1" NodeId="ns=1;i=6012" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+        <Value>
+            <uax:ListOfInt32>
+                <uax:Int32>1</uax:Int32>
+            </uax:ListOfInt32>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ParentNodeId="ns=1;i=5010" ValueRank="1" NodeId="ns=1;i=6013" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6014" BrowseName="StaticStringNodeIdPattern">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5001" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3003</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6005</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5002" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3003</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6006</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultJson" NodeId="ns=1;i=5003" BrowseName="Default JSON">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3003</Reference>
+        </References>
+    </UAObject>
+</UANodeSet>

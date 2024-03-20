@@ -1,0 +1,33 @@
+###########################
+# UaModeler Project File  #
+# Generated at 20.03.2024 #
+###########################
+
+PROJECTNAME = DemoOpcUa
+
+TEMPLATESET = ($TEMPLATES)/net/v3_4/t0/net_server.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    demoopcua.ua
+
+VARIABLES+= demoopcua.ua: Namespace=DemoOpcUa; Organization=cleia; 
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    demoopcua.ua: #008000
+
+PROJECTVARIABLES += GenerateDefaultApplication = true \
+    GeneratePackagesConfig = true \
+    NetFramework = net6 \
+    ProjectNamespace = DemoOpcUa \
+    ProjectOrganization = cleia
+
+OUTPUTPATH = 
+
+GENERATE += demoopcua.ua
+
+NODEACCESSINFOROLES += Administrator \
+    SecurityAdmin \
+    ConfigurationAdmin \
+    Operator \
+    Observer
+

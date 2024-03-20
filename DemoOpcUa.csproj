@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0; net6.0-windows</TargetFrameworks>
+    <AssemblyName>cleia.DemoOpcUa</AssemblyName>
+    <RootNamespace>cleia.DemoOpcUa</RootNamespace>
+    <Copyright>Copyright (c) Unified Automation GmbH 2011-2024</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="demoopcua.xml" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+    <PackageReference Include="UnifiedAutomation.UaBase" Version="" />
+    <PackageReference Include="UnifiedAutomation.UaBase.BouncyCastle" Version="" />
+    <PackageReference Include="UnifiedAutomation.UaServer" Version="" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+    <PackageReference Include="UnifiedAutomation.UaBase" Version="" />
+    <PackageReference Include="UnifiedAutomation.UaBase.Windows" Version="" />
+    <PackageReference Include="UnifiedAutomation.UaServer" Version="" />
+  </ItemGroup>
+
+</Project>
